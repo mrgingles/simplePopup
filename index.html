@@ -31,37 +31,69 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <h1>
+<a name="simplepopup" class="anchor" href="#simplepopup"><span class="octicon octicon-link"></span></a>simplePopup</h1>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="description--descrizione" class="anchor" href="#description--descrizione"><span class="octicon octicon-link"></span></a>Description / Descrizione</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>simplePopup allows you to create (very) simple draggable, customizable and unobtrusive popups. You can open multiple popups at the same time and choose what of them bring to front just by clicking it.
+All the popups are draggable (using jQueryUI draggable) and you can avoid overlapping with just one line of code.
+The created popups won't lock the page behind, so you can continue working on your HTML document while the popup is open.
+You can put everything you want in the popups!</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>simplePopup ti consente di creare dei popup (molto) semplici trascinabili, personalizzabili e discreti. Puoi aprire più popup allo stesso tempo e scegliere quale di essi visualizzare in cima semplicemente cliccandolo.
+Tutti i popup possono essere trascinati (utilizzando jQueryUI draggable) ed è possibile evitare sovrapposizioni con una singola riga di codice.
+I popup non bloccano la pagina che si sta visualizzando, quindi è possibile continuare a lavorare sul documento HTML sottostante  mentre il popup è aperto.
+E' possibile inserire qualunque cosa nei popup!</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="examples--esempi" class="anchor" href="#examples--esempi"><span class="octicon octicon-link"></span></a>Examples / Esempi</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Initialize simplePopup / Inizializzare simplePopup</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#myPopup'</span><span class="p">).</span><span class="nx">simplePopup</span><span class="p">();</span>
+</pre></div>
+
+<p>Open or close a popup / Aprire o chiudere un popup</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#myPopup'</span><span class="p">).</span><span class="nx">simplePopup</span><span class="p">(</span><span class="s1">'open'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#myPopup'</span><span class="p">).</span><span class="nx">simplePopup</span><span class="p">(</span><span class="s1">'close'</span><span class="p">);</span>
+</pre></div>
+
+<p>Initialize a popup with options and show it / Inizializzare un popup con delle opzioni e mostrarlo</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#myPopup'</span><span class="p">).</span><span class="nx">simplePopup</span><span class="p">({</span>
+    <span class="s2">"opt"</span><span class="o">:</span> <span class="s2">"val"</span><span class="p">;</span>
+<span class="p">},</span> <span class="s2">"open"</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="available-options--opzioni-disponibili" class="anchor" href="#available-options--opzioni-disponibili"><span class="octicon octicon-link"></span></a>Available options / Opzioni disponibili</h3>
+
+<ul>
+<li>
+<strong>open</strong>: to show the popup / mostra il popup</li>
+<li>
+<strong>close</strong>: to hide the popup  / nasconde il popup</li>
+<li>
+<strong>destroy</strong>: to destroy the popup / distrugge il popup</li>
+<li>
+<strong>moveToTop</strong>: brings the popup to top / sposta il popup in cima</li>
+<li>
+<strong>closeAll</strong>: closes all popups / chiude tutti i popup</li>
+<li>
+<strong>openAll</strong>: opens all popups / apre tutti i popup</li>
+</ul><p>Any DOM object with class <em>simplemodal_close_button</em> will close the popup when clicked</p>
+
+<p>Ogni oggetto del DOM con classe <em>simplemodal_close_button</em> farà chiudere il popup quando cliccato</p>
+
+<h3>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h3>
+
+<p>A demo will be available soon</p>
+
+<p>La demo sarà disponibile a breve</p>
       </section>
     </div>
 
