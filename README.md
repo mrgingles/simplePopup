@@ -42,6 +42,10 @@ $('#myPopup').simplePopup({
 - **closeAll**: closes all popups / chiude tutti i popup
 - **openAll**: opens all popups / apre tutti i popup
 
+Any DOM object with class *simplemodal_close_button* will close the popup when clicked
+
+Ogni oggetto del DOM con classe *simplemodal_close_button* farà chiudere il popup quando cliccato
+
 ###Demo
 
 A demo will be available soon
