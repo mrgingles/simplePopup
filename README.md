@@ -1,5 +1,7 @@
-simplePopup
+simplePopup v1.0.0
 ===========
+#####Author: Vincenzo Mennella
+#####Relased under MIT License
 
 ###Description / Descrizione
 
