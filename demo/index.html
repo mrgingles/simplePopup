@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>simplePopup DEMO</title>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+	<script src="../simplePopup.min.js"></script>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../css/style.min.css">
+	
+	<style>
+		#myPopup, #myPopup2, #secondLink {
+			display: none;
+		}
+	</style>
+	
+	<script>
+		function openpopup() {
+			$('#myPopup').simplePopup({
+				"draggable": true
+			}, "open");
+			
+			$('#secondLink').show();
+		}
+		
+		function openpopup2() {
+			$('#myPopup2').simplePopup({
+				"draggable": true,
+				"notoverlap": true,
+				"bgcolor": "#9999FF"
+			}, "open");
+		}
+	</script>
+</head>
+
+<body style="height: 100%;">
+	<div id="myPopup">
+		<h1>This is your popup!</h1>
+		
+		<div>This is the content of my popup! I can add <input type="button" value="buttons"> or <b>style <i>text</i></b>!</div>
+		<br />
+		<div>And I can use options to change background color, box shadow and many other things...</div>
+		<br />
+		<br />
+		<div style="float: right">right-floating element</div>
+		<br />
+		<div class="simplemodal_close_button">This popup will close if you click here!</div>
+	</div>
+	
+	<div id="myPopup2">
+		<h1>This is your popup, and does not overlap!</h1>
+		
+		<div>This pop up did not overlap the previous one!</div>
+		<br />
+		<div>And it's background color is different!</div>
+		<br />
+		<br />
+		<div style="float: right">right-floating element</div>
+		<br />
+		<div class="simplemodal_close_button">This popup will close if you click here!</div>
+	</div>
+	
+	<div>simplePopup allows you to create (very) simple draggable, customizable and unobtrusive popups.</div>
+	<div>You can open multiple popups at the same time and choose what of them bring to front just by clicking it.</div>
+	<div>All the popups are draggable (using jQueryUI draggable) and you can avoid overlapping with just one line of code.</div>
+	<div>The created popups won't lock the page behind, so you can continue working on your HTML document while the popup is open. You can put everything you want in the popups!</div>
+	
+	<br /><br />
+	
+	<div align="center">
+		<h2><a href="javascript:void(0)" onclick="openpopup()">Open The Popup!</a></h2>
+	</div>
+	
+	<div align="center" id="secondLink">
+		<h2><a href="javascript:void(0)" onclick="openpopup2()">Open The Popup wich does not overlap to the previous one!</a></h2>
+	</div>
+</body>
+</html>
