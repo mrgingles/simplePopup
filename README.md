@@ -48,6 +48,6 @@ Ogni oggetto del DOM con classe *simplemodal_close_button* farà chiudere il pop
 
 ###Demo
 
-A demo will be available soon
+Demo available in /demo folder of simplePopup
 
-La demo sarà disponibile a breve
+La demo è disponibile nella cartella /demo di simplePopup
