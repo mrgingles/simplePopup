@@ -24,7 +24,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /*
 Author: Vincenzo Mennella
 Last updated on 27 feb 2014
-Version: 1.0
+Version: 1.0.0
+
+https://github.com/mrgingles/simplePopup
 */
 
 /*
