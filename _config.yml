@@ -1,0 +1,8 @@
+title: Simplepopup
+description: simplePopup allows you to create (very) simple draggable, customizable and unobtrusive popups
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
