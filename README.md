@@ -1,7 +1,7 @@
 simplePopup v1.0.0
 ===========
 ### Author: Vincenzo Mennella
-### Relased under MIT License
+### Released under MIT License
 
 ### Description / Descrizione
 
